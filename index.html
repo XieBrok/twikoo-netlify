@@ -2,6 +2,20 @@
 
 <head>
   <meta charset="utf-8">
+  <script type="text/javascript">
+    exports.handler = async (event, context) => {
+  return {
+    statusCode: 200,
+    headers: {
+      'Access-Control-Allow-Origin': 'https://hhyyyy.cn',
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type'
+    },
+    body: JSON.stringify({ message: 'Twikoo 云函数运行正常' })
+  };
+};
+
+  </script>
 </head>
 
 <body>
